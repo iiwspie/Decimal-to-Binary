@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Silkscreen", cursive;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  background: #333;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  mix-blend-mode: hard-light;
+  color: white;
+}
+.container #showDecimal {
+  font-size: 4em;
+}
+.container input {
+  width: 75%;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  transition: transform 1.5s;
+}
+.container h2 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.container table tbody tr#binary td {
+  width: 5vw;
+  font-size: 3em;
+}
+.container table tbody tr#binary td.w {
+  color: black;
+  background: white;
+}
+.container table tbody tr#binary td.b {
+  color: white;
+  background: black;
+}
+.container table tbody tr#octonary td {
+  width: 5vw;
+  font-size: 3em;
+  color: white;
+}
+.container table tbody tr#octonary td.black {
+  background: black;
+}
+.container table tbody tr#octonary td.red {
+  background: red;
+}
+.container table tbody tr#octonary td.orange {
+  background: orange;
+}
+.container table tbody tr#octonary td.yellow {
+  background: yellow;
+}
+.container table tbody tr#octonary td.green {
+  background: green;
+}
+.container table tbody tr#octonary td.DeepSkyBlue {
+  background: DeepSkyBlue;
+}
+.container table tbody tr#octonary td.blue {
+  background: blue;
+}
+.container table tbody tr#octonary td.purple {
+  background: purple;
+}/*# sourceMappingURL=style.css.map */

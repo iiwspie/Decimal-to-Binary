@@ -1,0 +1,71 @@
+$rainbow : black,red,orange,yellow,green,DeepSkyBlue,blue,purple;
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+    user-select: none;
+}
+
+body {
+    background: #333;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    mix-blend-mode: hard-light;
+    color:white;
+    #showDecimal {
+        font-size: 4em;
+    }
+    input {
+        width: 75%;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        transition: transform 1.5s;
+    }
+    h2 {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    table {
+        tbody {
+            tr#binary {
+                td {
+                    width: 5vw;
+                    font-size: 3em;
+                    &.w {
+                        color: black;
+                        background: white;
+                    }
+                    &.b {
+                        color: white;
+                        background: black;
+                    }
+                }
+            }
+            tr#octonary {
+                td {
+                    width: 5vw;
+                    font-size: 3em;
+                    color: white;
+                    @each $c in $rainbow {
+                        &.#{$c} {
+                            background: $c;
+                        }
+                    }
+                    // &.c1 { background: $c1; }
+                    // &.c2 { background: $c2; }
+                    // &.c3 { background: $c3; }
+                }
+            }
+        }
+    }
+}
